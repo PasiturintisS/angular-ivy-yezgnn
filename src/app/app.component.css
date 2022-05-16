@@ -1,3 +1,14 @@
 p {
   font-family: Lato;
 }
+
+.container {
+  margin: 50px, 25px, 25px, 50px;
+  padding-left: 10mm;
+  padding-right: 10mm;
+  border: 1mm solid black;
+}
+
+h3 {
+  color: blueviolet;
+}
