@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { PracticeComponent } from './practice/practice.component';
+import { SuccessComponent } from './success/success.component';
+import { FailuerComponent } from './failuer/failuer.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -14,6 +16,8 @@ import { PracticeComponent } from './practice/practice.component';
     ServerComponent,
     ServersComponent,
     PracticeComponent,
+    SuccessComponent,
+    FailuerComponent,
   ],
   bootstrap: [AppComponent],
 })
