@@ -11,6 +11,7 @@ export class SuccessComponent implements OnInit {
   ngOnInit() {}
 
   showAlert() {
-    return alert('Start was sucssessfull (:');
+    console.log('Veikia');
+    alert('Start was sucssessfull (: !!!');
   }
 }

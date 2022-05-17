@@ -11,6 +11,6 @@ export class FailuerComponent implements OnInit {
   ngOnInit() {}
 
   showAlert() {
-    alert('Start Faild ):');
+    alert('Start Faild ): !!!');
   }
 }

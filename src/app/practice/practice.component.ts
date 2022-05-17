@@ -10,16 +10,15 @@ import { SuccessComponent } from '../success/success.component';
 })
 export class PracticeComponent {
   isTrue = true;
-  s: SuccessComponent;
-  f: FailuerComponent;
-
-  // constructor(private s: SuccessComponent, private f: FailuerComponent) {}
+  s = new SuccessComponent();
+  f = new FailuerComponent();
 
   toggleTrueFalse() {
     this.isTrue ? (this.isTrue = false) : (this.isTrue = true);
   }
 
   onStart() {
+    // this.isTrue ? alert('Start was succsessufll (:') : alert('Start Failed ):');
     this.isTrue ? this.s.showAlert() : this.f.showAlert();
   }
 }
