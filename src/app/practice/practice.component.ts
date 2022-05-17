@@ -18,7 +18,6 @@ export class PracticeComponent {
   }
 
   onStart() {
-    // this.isTrue ? alert('Start was succsessufll (:') : alert('Start Failed ):');
     this.isTrue ? this.s.showAlert() : this.f.showAlert();
   }
 }

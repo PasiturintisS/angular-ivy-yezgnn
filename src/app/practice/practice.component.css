@@ -1,3 +1,14 @@
 .btn-start {
   margin-left: 10mm;
 }
+
+.container-practice {
+  background-color: bisque;
+  border: 1mm solid black;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  height: 3cm;
+  width: 5cm;
+  margin: auto;
+}
