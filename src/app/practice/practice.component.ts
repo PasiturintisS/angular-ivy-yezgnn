@@ -1,5 +1,5 @@
 import { FunctionExpr } from '@angular/compiler';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FailuerComponent } from '../failuer/failuer.component';
 import { SuccessComponent } from '../success/success.component';
 
@@ -8,13 +8,25 @@ import { SuccessComponent } from '../success/success.component';
   templateUrl: './practice.component.html',
   styleUrls: ['./practice.component.css'],
 })
-export class PracticeComponent {
+export class PracticeComponent implements OnInit {
+  ngOnInit(): void {
+    document.querySelector('.btnn').classList.add('btnn-green');
+  }
   isTrue = true;
   s = new SuccessComponent();
   f = new FailuerComponent();
+  style = document.querySelector('.btnn');
 
   toggleTrueFalse() {
-    this.isTrue ? (this.isTrue = false) : (this.isTrue = true);
+    if (this.isTrue) {
+      this.isTrue = false;
+      document.querySelector('.btnn').classList.remove('btnn-green');
+      document.querySelector('.btnn').classList.add('btnn-red');
+    } else {
+      this.isTrue = true;
+      document.querySelector('.btnn').classList.remove('btnn-red');
+      document.querySelector('.btnn').classList.add('btnn-green');
+    }
   }
 
   onStart() {
